@@ -1,41 +1,27 @@
 class CurrencyModel {
   final String name;
 
-  final double real;
-  final double dolar; //USDC
-  final double bitcoin; //BTC
-  final double litecoin; //LTC
-  final double cardano; //ADA
-  final double uniswap; //UNI
-
-  CurrencyModel(
-      {this.name,
-      this.real,
-      this.dolar,
-      this.bitcoin,
-      this.litecoin,
-      this.cardano,
-      this.uniswap});
+  CurrencyModel({this.name,});
 
   static List<CurrencyModel> getCurrencies() {
     return <CurrencyModel>[
       CurrencyModel(
-        name: 'Real',
+        name: 'Real', 
       ),
       CurrencyModel(
-        name: 'Dolar',
+        name: 'Dolar', //USDC
       ),
       CurrencyModel(
-        name: 'Bitcoin',
+        name: 'Bitcoin', //BTC
       ),
       CurrencyModel(
-        name: 'Litecoin',
+        name: 'Litecoin', //LTC
       ),
       CurrencyModel(
-        name: 'Cardano',
+        name: 'Cardano', //ADA
       ),
       CurrencyModel(
-        name: 'Uniswap',
+        name: 'Uniswap', //UNI
       ),
     ];
   }

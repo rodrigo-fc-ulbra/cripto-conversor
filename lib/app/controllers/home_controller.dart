@@ -21,65 +21,49 @@ class HomeController {
 
   Future<double> getValDolar() async {
     http.Response response;
-
     String url = "https://economia.awesomeapi.com.br/json/last/USD-BRL";
     response = await http.get(url);
     Map<String, dynamic> retor = json.decode(response.body)["USDBRL"];
-    double val = double.tryParse(retor["bid"]);
-
-    return val;
+    return double.tryParse(retor["bid"]);
   }
 
   Future<double> getValBitcoin() async {
     http.Response response;
-
     String url = "https://www.mercadobitcoin.net/api/BTC/ticker/";
     response = await http.get(url);
     Map<String, dynamic> retor = json.decode(response.body)["ticker"];
-    double val = double.tryParse(retor["buy"]);
-
-    return val;
+    return double.tryParse(retor["buy"]);
   }
 
   Future<double> getValLitecoin() async {
     http.Response response;
-
     String url = "https://www.mercadobitcoin.net/api/LTC/ticker/";
     response = await http.get(url);
     Map<String, dynamic> retor = json.decode(response.body)["ticker"];
-    double val = double.tryParse(retor["buy"]);
-
-    return val;
+    return double.tryParse(retor["buy"]);
   }
 
   Future<double> getValCardano() async {
     http.Response response;
-
     String url = "https://www.mercadobitcoin.net/api/ADA/ticker/";
     response = await http.get(url);
     Map<String, dynamic> retor = json.decode(response.body)["ticker"];
-    double val = double.tryParse(retor["buy"]);
-
-    return val;
+    return double.tryParse(retor["buy"]);
   }
 
   Future<double> getValUniswap() async {
     http.Response response;
-
     String url = "https://www.mercadobitcoin.net/api/UNI/ticker/";
     response = await http.get(url);
     Map<String, dynamic> retor = json.decode(response.body)["ticker"];
-
-    double val = double.tryParse(retor["buy"]);
-
-    return val;
+    return double.tryParse(retor["buy"]);
   }
 
   Future<void> convert() async {
     String text = toText.text;
-    double value = double.tryParse(text.replaceAll('-', '.')) ?? 1.0;
-    double result = 0;
+    double value = double.tryParse(text.replaceAll(',', '.').replaceAll('-', '')) ?? 1.0;
     double reais = 0;
+    double result = 0;
 
     //convert to (informed currency) to real
     if (toCurrency.name == 'Real') {
