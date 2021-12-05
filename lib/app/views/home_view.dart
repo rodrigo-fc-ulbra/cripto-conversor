@@ -26,7 +26,7 @@ class _HomeViewState extends State<HomeView> {
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       child: Padding(
-        padding: EdgeInsets.only(left: 30, right: 30, top: 100, bottom: 20),
+        padding: EdgeInsets.only(left: 30, right: 30, top: 10, bottom: 20),
         child: ListView(
           children: [
             Image.asset(
@@ -34,7 +34,7 @@ class _HomeViewState extends State<HomeView> {
               width: 250,
               height: 250,
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 5),
             CurrencyBox(
               selectedItem: homeController.toCurrency,
               controller: toText,
@@ -56,7 +56,7 @@ class _HomeViewState extends State<HomeView> {
                 });
               },
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 15),
             RaisedButton(
               color: Colors.amber,
               onPressed: () {

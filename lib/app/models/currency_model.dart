@@ -8,66 +8,35 @@ class CurrencyModel {
   final double cardano; //ADA
   final double uniswap; //UNI
 
-  CurrencyModel({
-      this.name,
+  CurrencyModel(
+      {this.name,
       this.real,
       this.dolar,
       this.bitcoin,
       this.litecoin,
       this.cardano,
-      this.uniswap
-  });
+      this.uniswap});
 
   static List<CurrencyModel> getCurrencies() {
     return <CurrencyModel>[
       CurrencyModel(
-          name: 'Real',
-          real: 1.0,
-          dolar: 0.18,
-          bitcoin: 0.15,
-          litecoin: 0.17,
-          cardano: 1.4,
-          uniswap: 0.5),
+        name: 'Real',
+      ),
       CurrencyModel(
-          name: 'Dolar',
-          real: 1.0,
-          dolar: 0.18,
-          bitcoin: 0.15,
-          litecoin: 0.17,
-          cardano: 1.4,
-          uniswap: 0.5),
+        name: 'Dolar',
+      ),
       CurrencyModel(
-          name: 'Bitcoin',
-          real: 1.0,
-          dolar: 0.18,
-          bitcoin: 0.15,
-          litecoin: 0.17,
-          cardano: 1.4,
-          uniswap: 0.5),
+        name: 'Bitcoin',
+      ),
       CurrencyModel(
-          name: 'Litecoin',
-          real: 1.0,
-          dolar: 0.18,
-          bitcoin: 0.15,
-          litecoin: 0.17,
-          cardano: 1.4,
-          uniswap: 0.5),
+        name: 'Litecoin',
+      ),
       CurrencyModel(
-          name: 'Cardano',
-          real: 1.0,
-          dolar: 0.18,
-          bitcoin: 0.15,
-          litecoin: 0.17,
-          cardano: 1.4,
-          uniswap: 0.5),
+        name: 'Cardano',
+      ),
       CurrencyModel(
-          name: 'Uniswap',
-          real: 1.0,
-          dolar: 0.18,
-          bitcoin: 0.15,
-          litecoin: 0.17,
-          cardano: 1.4,
-          uniswap: 0.5),
+        name: 'Uniswap',
+      ),
     ];
   }
 }
