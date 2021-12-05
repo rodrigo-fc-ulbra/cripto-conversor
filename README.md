@@ -1,10 +1,17 @@
 # cripto_conversor
 
--- Em desenvolvimento
+Vídeo: https://youtu.be/qw-GE4xOqNk
+
+Rodrigo Fagundes Coruja 
+
+Ulbra - Desenvolvimento Mobile - Análise e Desenvolvimento de Sistemas
+
+Exercício:
 
 Utilizando uma api de cotação de valores de criptomoedas (https://www.mercadobitcoin.com.br/api-doc/), faça uma app que seja possível converter um valor em reais para ativos (BTC, LTC, ADA, UNI, USDC) e o contrário informar uma criptomoeda e ele mostrar o valor em reais..
 
 --------------------------------------------------------------------------
+Comntários Flutter:
 
 A new Flutter project.
 
